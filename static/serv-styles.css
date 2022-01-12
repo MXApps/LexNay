@@ -1,0 +1,309 @@
+/*DESKTOP*/
+
+li{
+    margin-bottom: 20px;
+    list-style-position: inside;
+}
+
+li:last-child{
+    margin-bottom: 0;
+}
+
+.main-wrapper{
+    background-color: aliceblue;
+}
+
+/*LEXNAY AD CONTAINER*/
+
+.lx-ad-container{
+    background-image: url("../image/statue-of-liberty.jpg");
+    background-size:contain;
+    text-align: center;
+}
+
+.lx-ad-container h1{
+    color: aliceblue;
+    font-size: 35px;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.lx-ad-container h1, .option-1, .option-2{
+    background-color: rgba(0, 0, 0, 0.698);
+    width: 55%;
+    margin: auto;
+    display: flex;
+}
+
+.disponibilidad{
+    color: white;
+    margin: auto;
+    width: 55%;
+    padding: 10px 0 10px 0;
+    background-color: rgba(248, 7, 7, 0.698);
+}
+
+.option-1, .option-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 50px;
+    align-items: center;
+}
+
+.option-1 h2, .option-2 h2{
+    padding-bottom: 50px;
+    color: antiquewhite;
+    font-size: 25px;
+}
+
+.contact-methods img{
+    width: 70px;
+    height: 70px;
+    padding: 0 20px 0 20px;
+    cursor: pointer;
+}
+
+.contact-methods img:hover{
+    opacity: .7;
+}
+
+.option-2 button{
+    padding: 20px;
+    background-color: rgba(0, 0, 255, 0.787);
+    font-size: 20px;
+    border-radius: 25px;
+    color: aliceblue;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.option-2 button:hover{
+    background-color: rgb(0, 156, 26);
+}
+
+/*BANDS*/
+.band-a{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0.3337710084033614) 0%, rgba(113,204,255,1) 100%);
+    flex-direction: row;
+}
+
+.band-b{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,113,113,1) 0%, rgba(255,255,255,0.3337710084033614) 100%);
+    flex-direction: row-reverse;
+}
+
+.band-c{
+    background: rgb(246,255,249);
+    background: linear-gradient(90deg, rgba(246,255,249,1) 0%, rgba(0,111,13,0.3337710084033614) 100%);
+    flex-direction: row;
+}
+
+.band-a, .band-b, .band-c{
+    padding: 50px 0 50px 0;
+    display: flex;
+    align-items: center;
+}
+
+.question-and-icon{
+    text-align: center;
+    font-size: 25px;
+    width: 30%;
+    margin: auto;
+}
+
+.qa-icon{
+    font-size: 100px;
+    color: #047e29;
+    margin-top: 30px;
+}
+
+.answer{
+    text-align: justify;
+    width: 50%;
+    margin: auto;
+    list-style-position: inside;
+}
+
+.start-wrapper{
+    background-color: goldenrod;
+}
+
+.start-process-container{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    padding: 50px 0 50px 0;
+    text-align: center;
+}
+
+.start-icon{
+    font-size: 100px;
+    color: rgba(236, 13, 13, 0.877);
+    width: 10%;
+    align-self: center;
+}
+
+.start-title{
+    text-align: center;
+    width: 25%;
+    align-self: center;
+}
+
+.visitanos{
+    width: 25%;
+    cursor: pointer;
+    align-self: center;
+}
+
+.visitanos:hover{
+    opacity: .7;
+    text-decoration: underline;
+}
+
+.mandanos-mensaje, .llamanos{
+    width: 20%;
+    align-self: center;
+}
+
+.start-h1{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.start-img{
+    width: 50px;
+    height: 50px;
+    margin: 0 15px 0 15px;
+}
+
+.start-img:hover{
+    opacity: .7;
+}
+
+/*CELLPHONE*/
+
+@media only screen and (max-width: 1200px) {
+
+    /*LEXNAY AD CONTAINER*/
+    
+    .lx-ad-container{
+        background-image: url("../image/statue-of-liberty.jpg");
+        background-size:contain;
+        text-align: center;
+    }
+    
+    .lx-ad-container h1{
+        font-size: 25px;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    
+    .lx-ad-container h1, .option-1, .option-2{
+        width: 100%;
+    }
+
+    .disponibilidad{
+        width: 100%;
+        padding: 5px 0 5px 0;
+        font-size: 12px;
+    }
+    
+    
+    .option-1, .option-2{
+        padding-top: 20px;
+    }
+    
+    .option-1 h2, .option-2 h2{
+        padding-bottom: 20px;
+        font-size: 20px;
+    }
+    
+    .contact-methods img{
+        width: 35px;
+        height: 35px;
+        padding: 0 10px 0 10px;
+    }
+    
+    .option-2 button{
+        padding: 10px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+    }
+    
+    /*BANDS*/
+    .band-a, .band-c{
+        flex-direction: column;
+    }
+
+    .band-b{
+        flex-direction: column;
+    }
+
+    .band-a, .band-b, .band-c{
+        padding: 10px 0 10px 0;
+    }
+
+    .question-and-icon{
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .qa-icon{
+        font-size: 80px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .answer{
+        width: 90%;
+        margin: auto;
+        font-size: 12px;
+    }
+    
+    .start-process-container{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+    
+    .start-icon{
+        font-size: 80px;
+        color: rgba(236, 13, 13, 0.877);
+        width: 100%;
+        margin: 10px;
+    }
+    
+    .start-title{
+        width: 100%;
+    }
+    
+    .visitanos{
+        width: 100%;
+    }
+    
+    .mandanos-mensaje, .llamanos{
+        width: 100%;
+    }
+    
+    .start-h1{
+        font-size: 25px;
+        padding: 20px;
+    }
+
+    .visitanos h2{
+        font-size: 20px;
+        padding: 0;
+    }
+    
+    .start-img{
+        width: 40px;
+        height: 40px;
+        margin: 0 5px 0 5px;
+    }
+}
+

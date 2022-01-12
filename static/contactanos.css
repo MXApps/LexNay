@@ -1,0 +1,160 @@
+/*ANIMATIONS*/
+
+@keyframes animation-1 {
+    from{
+        color:rgb(243, 207, 65);
+    };
+
+    to{
+        color: white;
+    };
+}
+
+:root{
+    --pageWidth:85%;
+}
+
+.contact-us-banner{
+    background-image: url("../image/pattern-1.png");
+    width: var(--pageWidth);
+    margin: auto;
+    color: rgba(240, 248, 255, 0.89);
+    text-align: center;
+    font-size: 25px;
+    border-radius: 50px 50px 0 0;
+}
+
+.contact-us-title{
+    background-color: rgba(47, 47, 47, 0.658);
+    padding: 40px;
+    border-radius: 50px 50px 0 0;
+}
+
+.map-container{
+    text-align: center;
+    background-color: rgba(47, 47, 47, 0.658);
+    width: var(--pageWidth);
+    margin: auto;
+    padding: 50px 0 50px 0;
+}
+
+.map{
+    width:50%; 
+    height:600px;
+}
+
+.cu-section{
+    color: rgba(240, 248, 255, 0.89);
+    background-color: rgba(47, 47, 47, 0.658);
+    width: var(--pageWidth);
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 40px 0 40px 0;
+}
+
+.left-section{
+    width: 35%;
+    align-self: center;
+}
+
+.left-section i{
+    font-size: 50px;
+    color: rgba(231, 11, 11, 0.836);
+    align-self: center;
+    padding-top: 10px;
+}
+
+.right-section{
+    width: 65%;
+    color: rgba(240, 248, 255, 0.89);
+    align-self: center;
+}
+
+.cu-solution a, .callus-options a{
+    text-decoration: none;
+    text-decoration: underline;
+    color: rgba(240, 248, 255, 0.89);
+}
+
+.right-section h3{
+    text-decoration: none;
+    padding-bottom: 15px;
+    font-size: 25px;
+}
+
+.fa-facebook{
+    color: rgb(49, 49, 207);
+}
+
+.fa-whatsapp{
+    color: rgb(55, 211, 55);
+}
+
+.chat-options i, .callus-options i{
+    font-size: 50px;
+    padding: 0 15px 0 15px;
+}
+
+.chat-options i:hover, .callus-options i:hover, .callus-options a:hover{
+    color: white;
+    animation-name: animation-1;
+    animation-duration: 1s;
+}
+
+.fa-mobile-alt{
+    color: rgba(223, 174, 111, 0.822);
+}
+
+@media only screen and (max-width:1200px){
+
+    :root{
+        --pageWidth:100%;
+    }
+    
+    .contact-us-banner{
+        width: var(--pageWidth);
+        font-size: 20px;
+        border-radius: 0 0 0 0;
+    }
+    
+    .contact-us-title{
+        padding: 20px;
+        border-radius: 0 0 0 0;
+    }
+    
+    .map-container{
+        padding: 25px 0 25px 0;
+    }
+
+    .map{
+        width:95%; 
+        height:400px;
+    }
+    
+    .cu-section{
+        width: var(--pageWidth);
+        padding: 20px 0 20px 0;
+        font-size: 10px;
+    }
+    
+    .left-section i{
+        font-size: 40px;
+        padding-top: 5px;
+    }
+    
+    .right-section h3{
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .right-section a{
+        font-size: 20px;
+    }    
+    
+    .chat-options i, .callus-options i{
+        font-size: 40px;
+        padding: 0 10px 0 10px;
+    }
+}
